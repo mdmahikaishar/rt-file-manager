@@ -1,0 +1,19 @@
+.scroll {
+  &-y {
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: .5rem;
+      background-color: rgba(0,0,0,.25);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, .5);
+
+      &:hover {
+        background-color: rgba(0, 0, 0, .75);
+      }
+    }
+  }
+}
